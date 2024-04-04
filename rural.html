@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP Rural Solution</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-r8vjszkaZLSHt7SAug6EJaNDvAXx1y0tW3CjIfkK2LXLVDBj9c5lrlb+KauW9AZC" crossorigin="anonymous">
+<style>
+    .containerr1 {
+        background-color: #ccc; /* Gray background color */
+        width: 100%;
+        height: 400px;
+        margin: 0%;
+        padding: 0%;
+    }
+    .text {
+        font-size: 48px;
+        font-family: Arial, sans-serif; /* Change this to your desired font */
+        color: #000; /* Change this to your desired text color */
+        background-color: #eaeaea; /* Adjust the last value (0.5) to change the transparency */
+        padding: 20px;
+        text-align: center;
+      }
+      .button-container {
+        display: flex;
+        background-color: rgb(156, 156, 156);
+       
+    }
+    
+    .btn {
+        display: inline-block;
+        text-decoration: none; /* Remove underline for links */
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        margin-right: 0px; /* Reduce margin between buttons */
+        font-weight: bold;
+    }
+    
+    .btn:last-child {
+        margin-right: 0; /* Remove margin from the last button */
+    }
+    
+    .btn:hover {
+        background-color: orangeRED;
+        color: white;
+    }
+    
+    .content1 {
+        width: 80%; /* Adjusted width to accommodate the margin changes */
+        font-size: 21px;
+        line-height: 1.6;
+        color: #333; /* Text color */
+        margin-bottom: 20px;
+        margin-left: 160px;
+        margin-top: 100px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-weight: bold;
+    }
+    .hr-line {
+        border: none;
+        border-top: 2px solid #ccc;
+        margin: 20px 0;
+      }
+    .containerr2 {
+        display: flex;
+        background-color: hsl(0, 40%, 98%);
+        padding: 20px;
+        margin-top: 50px;
+    }
+    
+    .text-container {
+        flex: 1;
+        padding-right: 20px;
+        margin-left: 50px;
+       font-size: 19px;
+    }
+    
+    .image-container {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 50px;
+    }
+    
+    .image-container img {
+        max-width: 700px;
+        height: 600px;
+        margin-top: 80px;
+    }
+    
+    .learn-more-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: orangered;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+    .learn-more-btn:hover {
+        background-color: #ff7f00;
+    }
+      
+.containeru1 {
+    width: 90%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 0%;
+  }
+  
+  h2 {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    font-size: 22px;
+    color: hsl(0, 33%, 5%);
+    margin-bottom: 10px;
+    text-decoration: underline; /* Add underline to text */
+}
+
+  
+  p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: hsl(0, 3%, 6%);
+    margin-bottom: 15px;
+    font-weight: bold; /* Increase text thickness */
+}
+
+  
+   
+  
+.containeru2 {
+    background-color: #ccc; /* Gray background color */
+    text-align: center; /* Center-align content */
+    padding: 20px; /* Add padding */
+    margin-top: 100px;
+    
+}
+
+p {
+    font-size: 18px;
+    color: #333; /* Text color */
+    margin-bottom: 10px; /* Add some space below the text */
+}
+
+.download-icon {
+    font-size: 24px; /* Adjust icon size as needed */
+    color: orange; /* Change icon color */
+}
+
+.download-linkr {
+    display: inline-block; /* Make link inline-block to center horizontally */
+    width: 200px;
+    height: 150px;
+}
+  
+.containerr3 {
+    position: relative;
+}
+
+.image-containerr {
+    position: relative;
+    display: inline-block;
+}
+
+.image-containerr img {
+    display: block;
+    max-width: 20000px;
+    height: 500px;
+}
+
+.text-overlayr {
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    right: 700px;
+    background-color: rgba(58, 49, 49, 0.8); /* Transparent black background */
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.text-overlayr h2{
+    color: #ccc;
+    font-weight: bold;
+}
+.text-overlayr h2,
+.text-overlayr p {
+    margin: 0;
+}
+.download-btnr {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border: 1px solid orange; /* Orange border */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.download-btnr:hover {
+    background-color: white;
+    color: orange;
+    border-color: orange;
+}
+
+.download-btnr i {
+    margin-right: 5px; /* Add space between icon and text */
+}
+ 
+   </style>
+</head>
+<body>
+    <nav class="navbar"  style="position: fixed; z-index: 1000;">
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Logo" style="margin-left: 50px; margin-left:150px;"></a>
+        </div>
+        <ul class="nav-menu" style="margin-left: 250px;">
+            <li class="nav-item" style="font-weight: bold;">
+                <a href="solution.html" id="solutionsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black; ">Solutions</a>
+                <div class="dropdown-menu" aria-labelledby="solutionsDropdown" style="font-weight: bold;">
+                    <a class="dropdown-item" href="urban.html" style="font-weight: bold;">Urban</a>
+                    <a class="dropdown-item" href="rural.html" style="font-weight: bold;">Rural</a>
+                    <a class="dropdown-item" href="privatelte.html" style="font-weight: bold;">Private LTE</a>
+                </div>
+            </li>
+            <li class="nav-item" style="font-weight: bold;">
+                <a href="#" id="productsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">Products & Technologies</a>
+                <div class="dropdown-menu" aria-labelledby="productsDropdown"  style="position: absolute; top: 100%; left: 0; width: 100%; background-color:hsl(0, 7%, 95%);">
+                    <div class="dropdown-container" style="width: 100%;">
+                        <div class="column" style="margin-left: 50px;">
+                            <h3 style="color: black;"><a href="tech.html" style="color: black;">Technologies</a></h3>
+                            <ul>
+                                <li><a href="5g.html" style="color: black; font-weight: bold;">5G</a></li>
+                                <li><a href="4g.html" style="color: black;font-weight: bold;">4G</a></li>
+                                <li><a href="3g.html" style="color: black;font-weight: bold;">3G</a></li>
+                                <li><a href="2g.html" style="color: black;font-weight: bold;">2G</a></li>
+                            </ul>
+                        </div>
+                        
+                        
+                        <div class="column">
+                            <h3><a href="products.html" style="color: black;font-weight: bold;">Products</a></h3>
+                            <ul>
+                                <li><a href="access.html" style="color: black;font-weight: bold;">ACCESS: OpenRAN</a></li>
+                                <li><a href="software.html" style="color: black;font-weight: bold;">Software-defined Open vRAN</a></li>
+                                <li><a href="openran.html" style="color: black;font-weight: bold;">5G OpenRAN</a></li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h3><a href="network.html" style="color: black;font-weight: bold;">Network Software</a></h3>
+                            <ul>
+                                <li><a href="inter.html" style="color: black;font-weight: bold;">Interoperable</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="controller.html" style="color: black; margin-left:40px;font-weight: bold;">Open RAN Controller</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="unified.html" style="color: black;font-weight: bold;">Unified</a></li>
+                                <li><a href="cloud.html" style="color: black;font-weight: bold;">Cloud-native</a></li>
+                                <li><a href="end.html" style="color: black;font-weight: bold;">End-to-end</a></li>
+                                <li><a href="performance.html" style="color: black;font-weight: bold;font-weight: bold;">Performance</a></li>
+                                <li><a href="multi.html" style="color: black;font-weight: bold;">Multi-tenant and Sharing</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="mocn.html" style="color: black;margin-left:40px;font-weight: bold;">MOCN</a></li>
+                                        <li><a href="moran.html" style="color: black;margin-left:40px;font-weight: bold;">MORAN</a></li>
+                                    </ul>
+                                    <li><a href="secure.html" style="color: black;font-weight: bold;">Secure</a></li>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="column">
+                            <h3><a href="intelligence.html" style="color: black;font-weight: bold;">Network Intelligence</a></h3>
+                            <ul>
+                                <li><a href="analytics.html" style="color: black;font-weight: bold;">Analytics</a></li>
+                                <li><a href="real.html" style="color: black;font-weight: bold;">Real-Time ALL G SON</a></li>
+                                <li><a href="orches.html" style="color: black;font-weight: bold;">Network Orchestrator</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="column" style="background-color: green; width: fit-content; margin-right:50px;">
+                            <p style="color: white; text-align: justify; margin: 0; font-size:20px;font-weight: bold;">Visit our resources page to download collateral, watch customer testimonials, or get a spec sheet.</p>
+                           <br> <a href="resources.html"><h3 style="color: white;font-weight: bold;">Resources -></h3></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </li>
+            
+            <li class="nav-item" style="font-weight: bold;">
+                <a href="customer.html" id="productsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">Customers</a>
+              
+            </li>
+            <li class="nav-item"style="font-weight: bold;">
+                <a href="company.html" id="companyDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">Company</a>
+                <div class="dropdown-menu" aria-labelledby="companyDropdown" style="color: black;">
+                    <ul class="sub-menu" style="color: black;">
+                        <li class="menu-item" style="color: black;">
+                            <h6><a href="who_we_are.html" style="color: black;font-weight: bold;">Who We Are</a></h6>
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="mission.html" style="color: black;font-weight: bold;">Mission and Vision</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <h6><a href="news.html" style="color: black;font-weight: bold;">News</a></h6>
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="press.html" style="color: black;font-weight: bold;">Press Releases</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="coverage.html" style="color: black;font-weight: bold;">News Coverage</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <h6><a href="leadership.html" style="color: black;font-weight: bold;">Leadership</a></h6>
+                        </li>
+                        <li class="menu-item">
+                            <h6><a href="awards.html" style="color: black;font-weight: bold;">Awards</a></h6>
+                        </li>
+                        <li class="menu-item">
+                            <h6><a href="contact.html/" style="color: black;font-weight: bold;">Contact</a></h6>
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="support.html" style="color: black;font-weight: bold;">Support</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <h6><a href="partner.html" style="color: black;font-weight: bold;">Partners</a></h6>
+                        </li>
+                        <li class="menu-item">
+                            <h6><a href="legal.html" style="color: black;font-weight: bold;">Legal</a></h6>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            
+            
+            
+            <li class="nav-item" style="font-weight: bold;">
+                <a href="careers.html" id="productsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">Careers</a>
+                
+            </li>
+            <li class="nav-item" style="font-weight: bold;">
+                <a href="resources.html" id="solutionsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">Resources</a>
+                <div class="dropdown-menu" aria-labelledby="solutionsDropdown">
+                    <a class="dropdown-item" href="whitepapers.html"style="font-weight: bold;"> White Papers</a>
+                    <a class="dropdown-item" href="solutionoverview.html" style="font-weight: bold;">Solution Overviews</a>
+                    <a class="dropdown-item" href="video.html"style="font-weight: bold;">Videos</a>
+                    <a class="dropdown-item" href="blogs.html"style="font-weight: bold;"> Blogs</a>
+                    <a class="dropdown-item" href="casestudies.html"style="font-weight: bold;"> Case Studies</a>
+                    <a class="dropdown-item" href="webinars.html"style="font-weight: bold;"> Webinars</a>
+                    <a class="dropdown-item" href="openran.html"style="font-weight: bold;"> Open RAN</a>
+                </div>
+            </li>
+        </ul>
+        
+        <div class="search-contact">
+            <a href="#" class="search">
+                
+      <button type="submit" style="margin-right: 10px;margin-top: 10px; width:40px;
+      height:40px;"><i class="fa fa-search"></i></button>
+            </a>
+            <button class="contact-btn"  >Contact Us</button>
+        </div>
+        
+    </nav>
+
+
+
+    <div class="containerr1">
+        <!-- Your content goes here -->
+    </div>
+
+    <button class="translate-btn">Translate >></button>
+
+    <div class="text">Rural Solutions</div>
+  
+    <div class="button-container">
+        <a href="urban.html" class="btn" style="margin-left: 600px;">URBAN</a>
+        <a href="rural.html" class="btn" style=" background-color:orangered">RURAL</a>
+        <a href="privatelte.html" class="btn">PARIVATE LTD</a>
+        
+    </div>
+    <div class="content1">
+        <p class="content1">Enhanced mobile broadband will be the first commercial application of <span style="color: orangered;">5G </span>and can help operators deliver coverage everywhere from rural to suburban to most dense urban locations. Parallel Wireless <span style="color: orangered;">OpenRAN</span> can support all those deployment scenarios at the lowest TCO and can be deployed on accelerated timeline.</p>
+      
+    </div>
+    <hr class="hr-line"> 
+    <div class="containerr2">
+        <div class="text-container">
+            <h2>Features and Capabilities</h2>
+            <p>Our CoverageParallel Wireless’s innovative cloud-native <span style="color: orangered;"><b>OpenRAN</b></span> coverage solution enables coverage by lowering cost, simplifying installation, and increasing flexibility through <span style="color: orangered;"><b>disaggregation of hardware and software.</b></span> The flexibility of our software platform enables deployment in urban or rural environments. To meet a variety of deployment scenarios, we have a large portfolio of OpenRAN hardware available from macrocells, to small cells, to Massive MIMOs, all orchestrated and managed by our <span style="color: orangered;"><b>OpenRAN</b></span> coverage solution enables coverage by lowering cost, simplifying installation, and increasing flexibility through <span style="color: orangered;"><b>OpenRAN and network software</b></span>  suite:</p>
+            <ul>
+                <li>Offering ALL Gs in RRHs, all software upgradable to any G, and enabling access flexibility; shared capacity on COTS-based vBBU to provide voice and data on the same equipment.</li>
+                <li>Providing an overall low-cost solution with a cost structure that serves low density through deployment flexibility (can deploy 1 sector per site, or tri-sector where needed with the same hardware and all optimizations and handovers done by OpenRAN software) or high density through selection of <span style="color: orangered;"><b>OpenRAN hardware</b></span>  (macros, small cells or Massive MIMOs) that fit the deployment need.</li>
+                <li>Enabling the new telco value chain in coverage through flexibility in operation – with the Parallel Wireless <span style="color: orangered;"><b>OpenRAN controller</b></span> enabling new business models, new revenue generation and <span style="color: orangered;"><b>network sharing</b></span>  – coverage network slice can be managed by a third party without affecting any other regional or urban slices.</li>
+            </ul>
+            <a href="#" class="learn-more-btn">Learn More >></a>
+        </div>
+        <div class="image-container">
+            <img src="r1.jpg" alt="Image">
+        </div>
+    </div>
+    
+    <hr class="hr-line" style="margin-top: 50px;">
+    <div class="containeru1"> 
+      <h3>Deployment Options Include:</h3>
+      <br>
+      <h4> Integrated  -</h4>
+      <p> Enables 2G, 3G, 4G from the same base station with upgrades to 5G. This deployment option provides the lowest power consumption for multi-mode operation. Parallel Wireless has had successfully integrated deployments with customers, <span style="color: orangered;"> MTN, Optus</span>  and Vodafone <span style="color: orangered;">Turkey</span>.</p>
+    <br>
+      <h4> Urban, Suburban and Rural (split 7, 8) – </h4>
+      <p>This deployment option supports three environments, Urban, Suburban and Rural, and enables ALL Gs from the same base station and is software upgradeable to 5G. This option includes pooled server capacity with a COTS vBBU and is upgradeable to accommodate other splits. Parallel Wireless has successfully worked with <span style="color: orangered;">Inland Cellular</span>, and <span style="color: orangered;">Vodafone Turkey</span>  and  <span style="color: orangered;">Ireland</span> implementing Urban, Suburban and Rural deployments.</p>
+    
+      <p>Our Urban Solution is the first O-RAN Alliance compliant Open RAN solution supporting all generations of networks, from 2G, 3G, 4G and 5G on 7.2 radios. With open, non-proprietary interfaces that address network overloads during high peak hours, ensuring ubiquitous coverage, faster speeds, and lower latency, the Urban Solution enables digital transformations preparing networks for the future.</p>
+    </div>
+    <hr class="hr-line">
+    <div class="containeru2">
+      <p style="font-size: 40px;">Learn More about Coverage Deployment Strategies in Our Urban Densification PowerPoint Overview</p>
+      <a href="#" class="download-linkr">
+          <i class="fas fa-cloud-download-alt download-icon" style="font-size: 100px;"></i>
+      </a>
+  </div>
+  <div class="containerr3">
+    <div class="image-containerr">
+        <img src="r2.jpg" alt="Image" style="width: 1515px;">
+    </div>
+    <div class="text-overlayr">
+        <h2>Optus Case Study
+            Learn how Parallel Wireless OpenRAN helped Optus bring 3G/4G coverage in Australia
+            
+            </h2>
+            <br><br>
+            <a href="#" class="download-btnr">
+                <i class="fas fa-cloud-download-alt"></i>
+                Download Now
+            </a>
+            
+    </div>
+</div>
+
+<hr class="hr-line">
+<h1 style="align-items: center; font-size:50px; margin-left:400px;" >Related Products & Technologies</h1>
+<div class="products" style="margin-left: 100px;margin-right:100px;">
+    
+    <div class="card">
+        <div class="img-container">
+            <img src="uc1.jpg" width="100%" height="300">
+        </div>
+        <p class="p1">Outdoor OpenRAN</p>
+        <p class="p2" style="font-weight: 400;">Our cloud-native OpenRAN approach enables any 5G migration option and is software upgradable to any future 3GPP releases delivering most cost-effective and advanced 5G capabilities to mobile operators and industries.</p>
+       <br> <button class="btn btn-danger" style="background-color: orangered;">LEARN MORE >></button>
+    </div>
+
+    <div class="card">
+        <div class="img-container">
+            <img src="uc3.png" width="100%" height="300">
+        </div>
+        <p class="p1">Real-time ALL G SON</p>
+        <p class="p2" style="font-weight: 400;">Parallel Wireless 5G 4G 3G 2G and Wi-Fi SON software module makes networks automated with self-configuration and self-optimization to deliver plug-n-play deployments and hands-free maintenance for much lower overall TCO.</p>
+        <button class="btn btn-danger" style="background-color: orangered;">LEARN MORE >></button>
+    </div>
+
+    <div class="card">
+        <div class="img-container">
+            <img src="uc2.png" width="100%" height="300">
+        </div>
+        <p class="p1"> 5G OpenRAN </p>
+        <p class="p2" style="font-weight: 400;">Our cloud-native OpenRAN approach enables any 5G migration option and is software upgradable to any future 3GPP releases delivering most cost-effective and advanced 5G capabilities to mobile operators and industries.</p><br>
+        <button class="btn btn-danger" style="background-color: orangered; margin-top:0%">LEARN MORE >></button>
+    </div>
+</div>
+
+<div class="footer-container">
+    <div class="footer " style="background-color:#d9d2d2;">
+        <div class="box5" style="margin-left: 150px; margin-bottom:50px; ">
+            <img src="logo.png" height="130" width="160" style="margin-bottom: 50px;margin-top: 0px;margin-left: 30px;">
+            <br>
+            <h5 style="margin-left: 30px;">Follow Us</h5>
+            <div class="icons" style="margin-left: 30px;">
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>  
+        </div>
+
+        <div class="box5">
+            <h3>IMPORTANT LINKS</h3><hr width="80%">
+            <div class="links">
+                <div class="link">
+                    <a href="#" class="link1">Resources</a>
+                </div>
+
+                <div class="link">
+                    <a href="#" class="link1">About Us</a>
+                </div>
+
+                <div class="link">
+                    <a href="#" class="link1">Leadership</a>
+                </div>
+
+                <div class="link">
+                    <a href="#" class="link1">Solutions</a>
+                </div>
+
+                <div class="link">
+                    <a href="#" class="link1">News</a>
+                </div>
+
+                <div class="link">
+                    <a href="#" class="link1">Technologies</a>
+                </div>
+
+                <div class="link">
+                    <a href="#" class="link1">Contact</a>
+                </div>
+
+                <div class="link">
+                    <a href="#" class="link1">Products</a>
+                </div>
+
+                <div class="link">
+                    <a href="#" class="link1">Careers</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="box5">
+            <h3>CONTACT US</h3><hr width="80%">
+            <span style="font-size:20px;"><i class="fa-solid fa-headphones" style="font-size:30px;"></i> &nbsp; 1-603-589-9937</span><br>
+            <br>
+            <span style="font-size:20px;"><i class="fa-sharp fa-solid fa-location-dot"  style="font-size:25px;"></i>&nbsp;&nbsp;&nbsp;&nbsp; 300 Innovative Way, Suite #2310<br>Nashua, NH 03062, USA</span>
+        </div>
+    </div>
+<div class="end" style="background-color:#d9d2d2;">
+    <p class="p2" style="margin-left: 150px;">&copy 2024 Parallel Wireless. All rights reserved.</p>
+    <p class="p2" style="margin-left: 150px;">Privacy Policy | Legal | Cookies | Terms of Use | Trademarks | PO Terms & Conditions</p>
+<!--End of main div-->
+</div>
+</body>
+</html>
